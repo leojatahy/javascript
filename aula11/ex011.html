@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de notas</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Saiba se voce foi aprovado</h1>
+    SUA NOTA:<input type="number" name="notas" id="notas">
+    
+    <input id="button" type="button" value="Verificar" onclick="calcular()">
+    <div id="resul">
+
+    </div>
+    <script>
+        function calcular() {
+            var nota = document.querySelector('input#notas')
+            var resul = document.querySelector('div#resul')
+            var r = Number(nota.value)
+            if(r >= 7.5) {
+                resul.innerHTML += `<p>Você foi <strong>Aprovado</strong></p>`
+            }else{ resul.innerHTML += `<p>Infelizmente Você foi <strong>Reprovado</strong>`
+            }
+    }
+    </script>
+</body>
+</html>
