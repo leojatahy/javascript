@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de notas</title>
-    <style>
-        
-    </style>
 </head>
 <body>
     <h1>Saiba se voce foi aprovado</h1>
@@ -22,6 +19,7 @@
             var nota = document.querySelector('input#notas')
             var resul = document.querySelector('div#resul')
             var r = Number(nota.value)
+            resul.innerHTML = `<p>Sua nota foi ${r}</p>`
             if(r >= 7.5) {
                 resul.innerHTML += `<p>Você foi <strong>Aprovado</strong></p>`
             }else{ resul.innerHTML += `<p>Infelizmente Você foi <strong>Reprovado</strong>`
