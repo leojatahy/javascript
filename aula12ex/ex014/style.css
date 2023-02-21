@@ -1,0 +1,25 @@
+body {
+    font: normal 2em arial;
+    background-color: blue;
+}
+header {
+    color: white;
+    text-align: center;
+}
+main {
+    background-color: white;
+    border-radius: 11px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-sizing: 3px 3px 10px rgba(0,0,0,0.363);
+}
+div {
+    text-align: center;
+    
+}
+footer { 
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
