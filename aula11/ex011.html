@@ -18,10 +18,12 @@
 <body>
     <h1>Sistema de Nacionalidade Brasileira</h1>
     
-    <label for="loc">Pais de Nascimento:</label>
-    <input type="text" id="loc" placeholder="pais" required >
-    <input type="submit" value="Verificar" onclick="ver()" >
-    <div id="res">
+    <form action="">
+        <label for="loc" aria-required="true">Pais de Nascimento:</label>
+        <input type="text" id="loc" required placeholder="pais">
+        <input type="submit" value="Verificar" onclick="ver()">
+        <div id="res" >
+    </form>
 
     </div>
 
