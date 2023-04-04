@@ -1,18 +1,24 @@
 function carregar () {
-    var msg = document.querySelector('div#msg')
-    var img = document.querySelector('div#imagem')
+    var msg = document.querySelector('#msg')
+    var img = document.querySelector('#foto')
     var data = new Date()
     var hora = data.getHours()
-    var minuts = data.getMinutes()
-    msg.innerHTML = `Agora são ${hora}:${minuts}`
+    
+    msg.innerHTML = `Agora são ${hora} horas`
+    if (hora >= 0 && hora < 12) {
+        // bom dia
+        img.src = `manha.jpg`
+        document.body.style.background =`#748A8C`
 
-    if (hora < 12){
-        img.innerHTML = `../fotos/tarde.png`
-    }else if (hora < 18) {
-        console.log('Boa tarde!')
-    }else {
-        img.src = `../fotos/noite.png`
-    }
+    } else if (hora >= 12 && hora < 18) {
+        // boa tarde
+        img.src = 'tarde.jpg'  
+        document.body.style.background =`#BF4A3F`
+    } else {
+        // boa noite
+        img.src = 'noite.jpg'
+        document.body.style.background =`#142426`
+    }  
+
 }
-
 
