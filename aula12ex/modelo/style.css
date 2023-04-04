@@ -1,0 +1,33 @@
+@charset "UTF-8" ;
+body {
+    background: rgb(70, 142, 237);
+    font: normal 1.3em Arial;
+}
+header {
+    text-align: center;
+}
+#container{
+    display: flex;
+    background-color: white;
+    padding: 15px;
+    margin: 0 auto;
+    width: 65vw;
+    height: 400px;
+    border-radius: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.378);
+}
+#foto {
+    background: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.378);
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+footer {
+    text-align: center;
+}
