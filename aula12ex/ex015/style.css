@@ -32,6 +32,10 @@ form {
     height: 200px; 
     text-align: center;
 }
+#button {
+   
+    height: 4vh
+}
 #res {
     display: flex;
     align-items: center;
