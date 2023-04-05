@@ -21,6 +21,7 @@ header {
     align-items: center;
     flex-wrap: nowrap;
     align-content: center;
+    max-width: 600px;
 }
 form {
     display: flex;
