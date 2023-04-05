@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+
+    <main id="container">
+        <form action="script.js">
+            <p>
+                <!-- aqui vai a idade -->
+                <label for="txtano">Ano de nascimento:</label>
+                <input type="number" name="txtano" id="txtano">
+            </p>
+            <p>
+                <!-- aqui vai o sexo -->
+                <label for="sex" class="sexo">Sexo:</label>
+                <label for="msex" >Masculino</label>
+                <input type="radio" name="radsex" id="msex" value="M" checked>
+                <label for="fsex" >Feminino</label>
+                <input type="radio" name="radsex" id="fsex" value="F">
+            </p>
+            <input type="button" value="Verificar" onclick="verificar()">
+        </form>
+        
+        <div id="res">
+            Preencha os dados acima para ver o resultado
+            <img src=""id="img">
+        </div>
+    </main>
+    <footer>
+        <P>&COPY; LeoJatahy</P>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
