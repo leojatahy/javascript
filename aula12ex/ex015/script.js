@@ -41,7 +41,7 @@ function verificar() {
         img.setAttribute('src', '../fotos/senhora.jpg')
       }
     }
-    res.innerHTML = `Detectamos ${gênero} com ${idade} anos !`
+    res.innerHTML = `Detectamos ${gênero} com ${idade} anos`
     res.appendChild(img) 
   }
 }
