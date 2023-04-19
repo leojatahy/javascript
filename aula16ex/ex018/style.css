@@ -1,0 +1,36 @@
+@charset "UTF-8" ;
+body {
+    background: rgb(70, 142, 237);
+    font: normal 1.3em Arial;
+}
+header {
+    text-align: center;
+    color: white;
+    text-shadow: -3px -1px 7px black;
+}
+#container {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    margin: 0 auto;
+    width: 89vw;
+    height: 60vw;
+    max-height: 487px;
+    max-width: 472px;
+    border-radius: 13px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.378);
+}
+#nuer{ 
+    display: flex;
+    width: 250px;
+    flex-direction: column;   
+}
+select, input{
+    margin: 5px 0px;
+}
+footer {
+    text-align: center;
+}
